@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * 
+ * 
+ * @author zircote
+ *
+ */
 class IndexController extends Zend_Controller_Action
 {
 
@@ -10,7 +15,8 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        // action body
+        $player = Zend_Auth::getInstance()->getStorage()->read();
+        var_dump($player->email, $player->role);
     }
 
 
