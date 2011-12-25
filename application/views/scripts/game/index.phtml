@@ -1,0 +1,36 @@
+<div id="container">
+    <ul id="editBowlers">
+        <li><a href="remove-bowler.html" id="remove">Remove</a></li>
+        <li><a href="#" id="add">Add</a></li>
+        <li><a href="#" id="skip">Skip</a></li>
+    </ul>
+    <table cellspacing="0" id="frames" summary="Bowling setup with players, frames, etc.">
+        <colgroup></colgroup><colgroup></colgroup><colgroup></colgroup><colgroup></colgroup><colgroup></colgroup>
+        <thead>
+            <tr>
+                <th class="name">Name</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php $i = 0; foreach ($this->data as $player) :
+        echo $this->score1($player, ++$i == 3?: false);
+        endforeach;?>
+        </tbody>
+    </table>
+    <footer>
+        <ul id="bowlNav">
+            <li id="standingsNav">
+                <!-- Add class="current" for black button highlight -->
+                <a href="standings.html">Standings</a>
+            </li>
+            <li id="accountNav">
+                <!-- Add class="current" for black button highlight -->
+                <a href="account.html">Account</a>
+            </li>
+        </ul>
+        <a href="?page=2" id="nextFrames">Next frames</a>
+    </footer>

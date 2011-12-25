@@ -12,9 +12,9 @@ class Gaz_Model_Mapper_Players extends Pincrowd_MongoAbstract
      * I find it generally a hack and unintuitive to say the least adding a level
      * of obsfucation I rather avoid for maintainability.
      * 
-     * @param Gaz_Model_Player $player
+     * @param Gaz_Model_User $player
      */
-    public function getUser(Gaz_Model_Player &$player)
+    public function getUser(Gaz_Model_User &$player)
     {
         $result = self::getMongoDB()
             ->users->findOne(array('_id' => $player->_id));

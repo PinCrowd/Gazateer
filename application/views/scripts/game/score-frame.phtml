@@ -1,0 +1,68 @@
+<link type="text/css" href="/css/popups.css" rel="stylesheet">
+<div id="editScore" class="popup">
+    <header>
+        <h1>Edit Brian's score: Frame 1</h1>
+    </header>
+    <section id="main">
+        <h2>Ball 1</h2>
+        <form method="post">
+        <ul class="options">
+            <li class="first"><a>0<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>1<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>2<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>3<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>4<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>5<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>6<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>7<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>8<input type="radio" name="throw1" value="0" /></a></li>
+            <li><a>9<input type="radio" name="throw1" value="0" /></a></li>
+            <li class="last"><a>X<input type="radio" name="throw1" value="0" /></a></li>
+            <div class="clear"></div>
+        </ul>
+        <h2 class="clear">Ball 2</h2>
+        <ul class="options">
+            <li class="first"><a>0<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>1<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>2<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>3<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>4<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>5<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>6<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>7<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>8<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>9<input type="radio" name="throw2" value="0" /></a></li>
+            <li class="last"><a>/<input type="radio" name="throw2" value="0" /></a></li>
+            <div class="clear"></div>
+        </ul>
+        <?php if($this->data['frame'] == 10) : ?>
+        <h2 class="clear">Ball 3</h2>
+        <ul class="options">
+            <li class="first"><a>0<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>1<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>2<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>3<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>4<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>5<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>6<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>7<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>8<input type="radio" name="throw2" value="0" /></a></li>
+            <li><a>9<input type="radio" name="throw2" value="0" /></a></li>
+            <li class="last"><a>/<input type="radio" name="throw2" value="0" /></a></li>
+            <div class="clear"></div>
+            <?php endif;?>
+        </ul>
+        <div class="buttons">
+            <ul>
+                <li>
+                    <button type="reset" class="button">Cancel</button>
+                </li>
+                <li>
+                    <button type="submit" class="button">Submit</button>
+                </li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        </form>
+    </section>
+</div>
