@@ -1,0 +1,3 @@
+[submodule "library/Pincrowd"]
+	path = library/Pincrowd
+	url = git@github.com:PinCrowd/PincrowdLibrary.git
