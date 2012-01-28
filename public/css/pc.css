@@ -55,3 +55,4 @@ footer { position:relative; }
 ============================*/
 #splashScreen { background:url(../images/bkg-splash.jpg) no-repeat; }
     #logo { margin:88px auto 0; width:440px; }
+a:visited { color: #000; }

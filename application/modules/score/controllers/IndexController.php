@@ -28,6 +28,13 @@ class Score_IndexController extends Zend_Controller_Action
 //         $this->view->renderScript = '/partials/score-card-1.phtml';
     }
 
+    public function editAction()
+    {
+        // action body
+    }
+
 
 }
+
+
 

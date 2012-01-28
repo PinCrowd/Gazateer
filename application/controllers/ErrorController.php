@@ -2,7 +2,16 @@
 
 class ErrorController extends Zend_Controller_Action
 {
-
+    /**
+     * 
+     * 
+     * @var Zend_Controller_Action_Helper_Redirector
+     */
+    protected $_redirector;
+    public function init()
+    {
+        $this->_redirector = $this->_helper->getHelper('redirector');
+    }
     public function errorAction()
     {
         $errors = $this->_getParam('error_handler');
@@ -20,6 +29,7 @@ class ErrorController extends Zend_Controller_Action
                 $this->getResponse()->setHttpResponseCode(404);
                 $priority = Zend_Log::NOTICE;
                 $this->view->message = 'Page not found';
+                $this->_helper->layout->setLayout('404');
                 break;
             default:
                 // application error
