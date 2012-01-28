@@ -8,21 +8,21 @@
                                array('width'=> '100', 'height' => '100', 'alt' => $this->user['_id'])
                            );?>
                         </div>
-                        <?php echo substr($this->user['_id'], 0 , 6)?>
+                        <?php echo substr($this->user['_id'], 0 , 7)?>
                         <a href="stats.html" class="profile">Profile</a>
                     </div>
                 </td>
                 <td>
-                <?php echo $this->frame($this->game['frames'][1]);?>
+                <?php echo $this->frame(1,$this->game['frames']);?>
                 </td>
                 <td>
-                <?php echo $this->frame($this->game['frames'][2]);?>
+                <?php echo $this->frame(2,$this->game['frames']);?>
                 </td>
                 <td>
-                <?php echo $this->frame($this->game['frames'][3]);?>
+                <?php echo $this->frame(3,$this->game['frames']);?>
                 </td>
                 <td>
-                <?php echo $this->frame($this->game['frames'][4]);?>
+                <?php echo $this->frame(4,$this->game['frames']);?>
                 </td>
             </tr>
             <tr class="divider">

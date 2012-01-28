@@ -1,8 +1,19 @@
 
                     <div class="cellContainer">
                         <ul class="score">
-                            <li class="ball2"><a href="edit-score.html"><?php echo isset($this->throw2) ? $this->throw2['value'] : null;?></a></li>
-                            <li class="ball1"><a href="edit-score.html"><?php echo isset($this->throw1) ? $this->throw1['value'] : null;?></a></li>
-                            <li class="frameScore clear"><a href="edit-score.html"><?php echo @$this->total ?: '0';?></a></li>
+                            <li class="ball2"><a href="<?php 
+                                echo $this->baseUrl('score/index/edit/' . $this->frame);
+                                ?>"><?php echo isset($this->frames[$this->frame]['throw2']) ? 
+                                $this->frames[$this->frame]['throw2']['value'] : null;?></a>
+                            </li>
+                            <li class="ball1"><a href="<?php 
+                                echo $this->baseUrl('score/index/edit/' . $this->frame);
+                                ?>"><?php echo isset($this->frames[$this->frame]['throw1']) ? 
+                                $this->frames[$this->frame]['throw1']['value'] : null;?></a>
+                            </li>
+                            <li class="frameScore clear"><a href="<?php 
+                                echo $this->baseUrl('score/index/edit/' . $this->frame);
+                                ?>"><?php echo @$this->frames[$this->frame]['total'] ?: '0';?></a>
+                            </li>
                         </ul>
                     </div>

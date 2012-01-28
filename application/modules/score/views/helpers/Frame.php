@@ -18,9 +18,12 @@ class Zend_View_Helper_Frame
      */
     public $view;
     
-    public function frame ($throw)
+    public function frame ($frame, $frames)
     {
-        return $this->view->partial('/partials/frame1-9.phtml',$throw);
+        return $this->view->partial(
+            '/partials/frame1-9.phtml',
+            array('frame'=>$frame, 'frames' => $frames)
+        );
     }
     /**
      * Sets the view field
