@@ -8,7 +8,7 @@
  * @property string $password public
  * @property string $role     public
  */
-class Gaz_Model_User extends Gaz_Model_ModelAbstract
+class Gaz_Model_Player extends Gaz_Model_ModelAbstract
 {
     protected $_params = array('_id' => null, 'email' => null, 
     'password' => null, 'role' => null);

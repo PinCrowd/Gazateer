@@ -31,7 +31,7 @@ class Pincrowd_Auth_Adapter implements Zend_Auth_Adapter_Interface
      */
     public function authenticate ()
     {
-        $user = new Gaz_Model_User(array('_id' => $this->_identity));
+        $user = new Gaz_Model_Player(array('_id' => $this->_identity));
         $playerMapper = new Gaz_Model_Mapper_Players();
         $playerMapper->getUser($user);
         $playerMapper = null;

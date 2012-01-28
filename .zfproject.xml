@@ -15,17 +15,9 @@
         <controllerFile controllerName="Auth">
           <actionMethod actionName="index"/>
         </controllerFile>
-        <controllerFile controllerName="Registration">
-          <actionMethod actionName="index"/>
-        </controllerFile>
-        <controllerFile controllerName="Game">
-          <actionMethod actionName="index"/>
-        </controllerFile>
       </controllersDirectory>
       <formsDirectory>
         <formFile formName="Login"/>
-        <formFile formName="Register"/>
-        <formFile formName="Profile"/>
       </formsDirectory>
       <layoutsDirectory>
         <layoutScriptsDirectory>
@@ -58,21 +50,6 @@
           </viewControllerScriptsDirectory>
           <viewControllerScriptsDirectory forControllerName="Auth">
             <viewScriptFile forActionName="index"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Registration">
-            <viewScriptFile forActionName="index"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="Game">
-            <viewScriptFile forActionName="index"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="two">
-            <viewScriptFile forActionName="game"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="game">
-            <viewScriptFile forActionName="two"/>
-          </viewControllerScriptsDirectory>
-          <viewControllerScriptsDirectory forControllerName="game">
-            <viewScriptFile forActionName="three"/>
           </viewControllerScriptsDirectory>
         </viewScriptsDirectory>
         <viewHelpersDirectory/>
@@ -112,12 +89,6 @@
             <testApplicationActionMethod forActionName="index"/>
           </testApplicationControllerFile>
           <testApplicationControllerFile forControllerName="Auth">
-            <testApplicationActionMethod forActionName="index"/>
-          </testApplicationControllerFile>
-          <testApplicationControllerFile forControllerName="Registration">
-            <testApplicationActionMethod forActionName="index"/>
-          </testApplicationControllerFile>
-          <testApplicationControllerFile forControllerName="Game">
             <testApplicationActionMethod forActionName="index"/>
           </testApplicationControllerFile>
         </testApplicationControllerDirectory>
