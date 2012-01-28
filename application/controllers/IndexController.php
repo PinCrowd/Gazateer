@@ -15,8 +15,10 @@ class IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        $player = Zend_Auth::getInstance()->getStorage()->read();
-        var_dump($player->email, $player->role);
+        if( Zend_Auth::getInstance()->getInstance()->hasIdentity()){
+            $player = Zend_Auth::getInstance()->getStorage()->read();
+            print_r($player);
+        }
     }
 
 

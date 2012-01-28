@@ -1,0 +1,57 @@
+/* PinCrowd Global CSS Document */
+
+/* General
+============================*/
+body { margin:0; padding:0; font:25px/28px Arial, Helvetica, sans-serif; }
+h1 { font-weight:normal; font-size:45px; margin:0; }
+a, #currentBowler td a { color:#FFF; text-decoration:none; display:block; }
+ul { list-style:none; margin:0; padding:0; }
+table { border-collapse:collapse; border-spacing:0; width:100%; }
+    th, td { padding:0; font-weight:normal; }
+    .even { background:#DDD; }
+.clear { clear:both; }
+.center { margin:0 auto; }
+* { outline:none; }
+
+/* Container
+============================*/
+#container { width:1024px; height:748px; overflow:hidden; position:relative; }
+
+/* Header
+============================*/
+header, footer, #frames thead, .divider { color:#FFF; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#f26a69), color-stop(49%,#8c0100), color-stop(50%,#7b0100), color-stop(71%,#970100), color-stop(87%,#970100), color-stop(100%,#7f0100)); /* Chrome,Safari4+ */ background:-webkit-linear-gradient(top, #f26a69 0%,#8c0100 49%,#7b0100 50%,#970100 71%,#970100 87%,#7f0100 100%); /* Chrome10+,Safari5.1+ */ }
+header, footer { display:block; text-align:center; }
+
+/* Buttons
+============================*/
+/* Centered group of buttons */
+.buttons, .centering { width:385px; margin:0 auto; clear:both; }
+    .buttons .button, .centering .button {padding:16px 22px 22px; margin:0 0 25px; font-size:25px; }
+
+/* All black buttons */
+.button, th.addOns, .options .current { text-decoration:none; color:#FFF; background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#848484), color-stop(49%,#161616), color-stop(50%,#000000), color-stop(71%,#141414), color-stop(87%,#141414), color-stop(100%,#000000)); /* Chrome,Safari4+ */ background:-webkit-linear-gradient(top, #848484 0%,#161616 49%,#000000 50%,#141414 71%,#141414 87%,#000000 100%); /* Chrome10+,Safari5.1+ */ }
+.button { text-align:center; border-radius:15px; }
+    .button:active, .bowlNav a:active { background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(13%,#141414), color-stop(29%,#141414), color-stop(50%,#000000), color-stop(51%,#161616), color-stop(100%,#848484)); /* Chrome,Safari4+ */ background:-webkit-linear-gradient(top, #000000 0%,#141414 13%,#141414 29%,#000000 50%,#161616 51%,#848484 100%); /* Chrome10+,Safari5.1+ */ }
+    
+/* Facebook buttons */
+#facebook { background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#98b5f1), color-stop(50%,#304d8a), color-stop(51%,#16377c), color-stop(100%,#3b5998)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top, #98b5f1 0%,#304d8a 50%,#16377c 51%,#3b5998 100%); /* Chrome10+,Safari5.1+ */ }
+#facebook:active { background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#3b5998), color-stop(49%,#16377c), color-stop(50%,#304d8a), color-stop(100%,#98b5f1)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top, #3b5998 0%,#16377c 49%,#304d8a 50%,#98b5f1 100%); /* Chrome10+,Safari5.1+ */ }
+
+/* Twitter button */
+#twitter { background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#b9edff), color-stop(50%,#3cc4f1), color-stop(51%,#1db5e7), color-stop(84%,#53d4ff), color-stop(100%,#53d4ff)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top, #b9edff 0%,#3cc4f1 50%,#1db5e7 51%,#53d4ff 84%,#53d4ff 100%); /* Chrome10+,Safari5.1+ */ }
+#twitter:active { background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,#53d4ff), color-stop(16%,#53d4ff), color-stop(49%,#1db5e7), color-stop(50%,#3cc4f1), color-stop(100%,#b9edff)); /* Chrome,Safari4+ */
+background:-webkit-linear-gradient(top, #53d4ff 0%,#53d4ff 16%,#1db5e7 49%,#3cc4f1 50%,#b9edff 100%); /* Chrome10+,Safari5.1+ */ }
+
+/* Footer
+============================*/
+footer { position:relative; }
+    footer ul { margin:0; padding:0; }
+        footer li { float:left; }
+
+/* Splash Screen
+============================*/
+#splashScreen { background:url(../images/bkg-splash.jpg) no-repeat; }
+    #logo { margin:88px auto 0; width:440px; }

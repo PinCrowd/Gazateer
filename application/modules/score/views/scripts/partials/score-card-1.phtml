@@ -1,0 +1,18 @@
+<?php $this->headLink()->appendStylesheet('/css/bowl.css');?>
+<table id="frames" summary="Bowling setup with players, frames, etc.">
+        <colgroup></colgroup><colgroup></colgroup><colgroup></colgroup><colgroup></colgroup><colgroup></colgroup>
+        <thead>
+            <tr>
+                <th class="name">Name</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+        </thead>
+        <tbody>
+        <?php
+        echo $this->partialLoop('/partials/player-sc-1.phtml', $this->data);
+?>
+        </tbody>
+    </table>
