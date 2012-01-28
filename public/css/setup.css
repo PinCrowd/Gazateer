@@ -1,0 +1,72 @@
+@import url("style.css");
+
+/* PinCrowd Setup CSS Document (How many bowlers, games, etc.) */
+
+/* General
+============================*/
+input { width:355px; border-radius:15px; font-size:25px; padding:15px; border:3px solid #AAA; margin-bottom:25px; }
+#submit { border:0; }
+
+/* Header
+============================*/
+header { height:75px; padding:40px 0 0; }
+#back, #haveShoes, #setupNav a { text-indent:-9999px; }
+#back, #haveShoes { height:46px; }
+#back { background:url(../images/ui-buttons.png) -335px -52px no-repeat; width:102px; height:46px; position:absolute; top:34px; left:34px; }
+	#back:active { background-position:-443px -52px; }
+#haveShoes { background:url(../images/ui-buttons.png) 0 -208px no-repeat; position:absolute; top:34px; right:34px; width:167px; }
+	#haveShoes:active { background-position:-176px -208px; }
+
+/* Amount options (1-6)
+============================*/
+#howMany ul { margin:5px 5px 0 0; padding:0; font-size:45px; }
+	#howMany li { float:left; margin:0 0 5px 5px; }
+		#howMany a { width:504px; padding:69px 0; }		
+
+/* Payment table (itemized charges)
+============================*/
+#charges { width:100%; height:518px; font-size:35px; overflow:hidden; }
+	#charges th, #charges td, .addOns { border-color:#AAA; }
+	#charges th, #charges td { padding:25px; text-align:left; border-bottom:2px solid #AAA; margin:0; vertical-align:top; }
+	#charges th { width:285px; }
+	#charges td { text-align:right; }
+	#total th, #total td { font-weight:bold; font-size:50px; }
+	#total th, #total td, #charges .addOns { border-bottom:none; }
+	#charges th.addOns { text-align:center; }
+	#charges td.addOns { border-left:2px solid #AAA; text-align:left; background:url(../images/bkg-add-ons.png) no-repeat; font-size:25px; padding:0; }
+		.breakdown { color:#AAA; }
+		#total .button { width:103px; margin-top:30px; float:right; font-weight:normal; padding:22px 25px 28px; font-size:32px; }
+
+/* Register bowler
+============================*/
+.centering .button { display:inline-block; width:157px; }
+.centering #submit { margin-left:20px; }
+
+/* Register landing page */
+#registerBowler .buttons { margin-top:130px; }
+
+/* Log in */
+#logIn .centering { margin-top:85px; }
+
+/* Sign up */
+#signUp .centering { margin-top:50px; }
+
+/* Play as guest */
+#guest .centering { margin-top:220px; }
+
+/* Footer
+============================*/
+footer { height:108px; padding-top:7px; }
+
+/* Icon navigation */
+#setupNav { margin-left:236px; }
+	#setupNav li { margin-left:25px; }
+		#setupNav a { background:url(../images/nav-buttons.png) no-repeat; height:98px; }
+			a#bowlersNav { width:105px; }
+				#bowlersNav:active, #bowlers .current { background-position:0 -104px; }
+			a#gamesNav { width:96px; background-position:-111px 0; }
+				#gamesNav:active, #games .current { background-position:-111px -104px; }
+			a#shoesNav { width:108px; background-position:-214px 0; }
+				#shoesNav:active, #shoes .current { background-position:-214px -104px; }
+			a#paymentNav { width:115px; background-position:-329px 0; }
+				#paymentNav:active, #payment .current { background-position:-329px -104px; }
