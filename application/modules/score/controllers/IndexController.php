@@ -10,9 +10,9 @@ class Score_IndexController extends Zend_Controller_Action
 
     public function indexAction()
     {
-        
-        
-        
+
+
+
         // action body
         $map = new Pincrowd_Model_Mapper_Games();
         $game = $map->findById(new MongoId('4ef784876be132f45e000000'));
@@ -23,9 +23,9 @@ class Score_IndexController extends Zend_Controller_Action
             'elan' => array('user' => $userMap->findById('emoss'), 'game' => $game),
             'greenberg' => array('user' => $userMap->findById('agreenberg') , 'game' => $game),
         );
-        $this->view->renderScript = '/partials/score-card-1.phtml';
 //         $this->view->renderScript = '/partials/score-card-1.phtml';
-//         $this->view->renderScript = '/partials/score-card-1.phtml';
+        $this->view->renderScript = '/partials/score-card-2.phtml';
+//         $this->view->renderScript = '/partials/score-card-3.phtml';
     }
 
     public function editAction()
